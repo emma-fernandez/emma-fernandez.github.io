@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmmaAI Connect - Intelligent WhatsApp Assistant</title>
+    <style>
+        :root {
+            --primary-color: #2D3250;    /* Deep blue */
+            --secondary-color: #424769;   /* Lighter blue */
+            --accent-color: #7077A1;      /* Accent purple */
+            --light-color: #F6B17A;       /* Warm orange */
+            --text-color: #333;
+            --light-text: #fff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: var(--text-color);
+        }
+
+        /* Navigation */
+        nav {
+            background-color: var(--primary-color);
+            padding: 1rem 2rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: var(--light-text);
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: var(--light-text);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--light-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            background-color: var(--secondary-color);
+            color: var(--light-text);
+            padding: 8rem 2rem 4rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--light-color);
+            color: var(--primary-color);
+            padding: 1rem 2rem;
+            border-radius: 30px;
+            text-decoration: none;
+            margin-top: 2rem;
+            font-weight: bold;
+            transition: transform 0.3s ease;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+        }
+
+        /* Features Section */
+        .features {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .features h2 {
+            text-align: center;
+            margin-bottom: 3rem;
+            color: var(--primary-color);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-card {
+            padding: 2rem;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* About Section */
+        .about {
+            background-color: var(--accent-color);
+            color: var(--light-text);
+            padding: 4rem 2rem;
+        }
+
+        .about-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary-color);
+            color: var(--light-text);
+            padding: 2rem;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="#" class="logo">EmmaAI Connect</a>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#about">About</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>Your Intelligent WhatsApp Assistant</h1>
+        <p>Transform your WhatsApp experience with AI-powered conversations, automated responses, and intelligent chat management.</p>
+        <a href="#contact" class="cta-button">Get Started</a>
+    </section>
+
+    <section class="features" id="features">
+        <h2>Why Choose EmmaAI Connect?</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <h3>Smart Conversations</h3>
+                <p>Advanced AI technology understands context and provides natural, meaningful responses to your WhatsApp messages.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Voice Recognition</h3>
+                <p>Support for voice messages with advanced speech-to-text capabilities for seamless communication.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Message History</h3>
+                <p>Intelligent conversation memory maintains context across multiple messages for more natural interactions.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Multi-language Support</h3>
+                <p>Communicate effectively in multiple languages with our advanced language processing capabilities.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-container">
+            <h2>About EmmaAI Connect</h2>
+            <p>EmmaAI Connect is revolutionizing WhatsApp communication by bringing advanced artificial intelligence to your everyday conversations. Our platform helps businesses and individuals automate responses, maintain meaningful conversations, and manage communications efficiently.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 EmmaAI Connect. All rights reserved.</p>
+    </footer>
+</body>
+</html>
